@@ -37,24 +37,7 @@ body {
     display: block;
     text-align: center;
     color: #fff;
-    animation: colorHeader 3s ease-in-out infinite alternate;
-}
-
-@keyframes colorHeader {
-    0% {
-        text-shadow:
-            0 0 7px #fff,
-            0 0 10px #fff,
-            0 0 21px #fff,
-            0 0 42px #0fa,
-            0 0 82px #0fa,
-            0 0 92px #0fa,
-            0 0 102px #0fa,
-            0 0 151px #0fa;
-    }
-
-    20% {
-        text-shadow:
+ text-shadow:
             0 0 5px #fff,
             0 0 10px #fff,
             0 0 20px #fff,
@@ -63,54 +46,6 @@ body {
             0 0 90px #0ff,
             0 0 100px #0ff,
             0 0 150px #0ff;
-    }
-
-    40% {
-        text-shadow:
-            0 0 4px #fff,
-            0 0 11px #fff,
-            0 0 19px #fff,
-            0 0 40px #f09,
-            0 0 80px #f09,
-            0 0 90px #f09,
-            0 0 100px #f09,
-            0 0 150px #f09;
-    }
-
-    60% {
-        text-shadow:
-            0 0 7px #fff,
-            0 0 10px #fff,
-            0 0 21px #fff,
-            0 0 42px #bc13fe,
-            0 0 82px #bc13fe,
-            0 0 92px #bc13fe,
-            0 0 102px #bc13fe;
-    }
-
-    80% {
-        text-shadow:
-            0 0 7px #fff,
-            0 0 10px #fff,
-            0 0 21px #fff,
-            0 0 42px #5271ff,
-            0 0 82px #5271ff,
-            0 0 92px #5271ff,
-            0 0 102px #5271ff,
-            0 0 151px #5271ff;
-    }
-
-    100% {
-        text-shadow:
-            0 0 7px #fff,
-            0 0 10px #fff,
-            0 0 21px #fff,
-            0 0 42px #f09,
-            0 0 82px #f09,
-            0 0 92px #f09,
-            0 0 102px #f09,
-            0 0 151px #f09;
-    }
 }
 
 .tofixed {
