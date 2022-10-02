@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'SF Mono';
+    src: url('SFMonoLigaturized-Bold.woff2') format('woff2'),
+        url('SFMonoLigaturized-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Mono';
+    src: url('SFMonoLigaturized-Heavy.woff2') format('woff2'),
+        url('SFMonoLigaturized-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Mono';
+    src: url('SFMonoLigaturized-Light.woff2') format('woff2'),
+        url('SFMonoLigaturized-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Mono';
+    src: url('SFMonoLigaturized-Semibold.woff2') format('woff2'),
+        url('SFMonoLigaturized-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Mono';
+    src: url('SFMonoLigaturized-Regular.woff2') format('woff2'),
+        url('SFMonoLigaturized-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Mono';
+    src: url('SFMonoLigaturized-Medium.woff2') format('woff2'),
+        url('SFMonoLigaturized-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
