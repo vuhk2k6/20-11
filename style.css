@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body {
+    font-family: monospace;
+    margin: 0;
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    padding: 0 10%;
+    border-bottom: 1px solid rgba(115, 114, 114, 0.2);
+    display: flex;
+    align-items: center;
+    color: #eee;
+    z-index: 11111111111111111;
+}
+
+.nav .logo {
+    font-size: 28px;
+    padding: 3px 0;
+    font-weight: 600;
+    color: #fc43ed;
+    font-family: 'Great Vibes', cursive;
+}
+
+.nav-content {
+    flex: 1;
+    margin-left: 32px;
+}
+
+.nav-content span {
+    font-size: 20px;
+    letter-spacing: 2px;
+    display: block;
+    text-align: center;
+    color: #fff;
+    animation: colorHeader 3s ease-in-out infinite alternate;
+}
+
+@keyframes colorHeader {
+    0% {
+        text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px #0fa,
+            0 0 82px #0fa,
+            0 0 92px #0fa,
+            0 0 102px #0fa,
+            0 0 151px #0fa;
+    }
+
+    20% {
+        text-shadow:
+            0 0 5px #fff,
+            0 0 10px #fff,
+            0 0 20px #fff,
+            0 0 40px #0ff,
+            0 0 80px #0ff,
+            0 0 90px #0ff,
+            0 0 100px #0ff,
+            0 0 150px #0ff;
+    }
+
+    40% {
+        text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 40px #f09,
+            0 0 80px #f09,
+            0 0 90px #f09,
+            0 0 100px #f09,
+            0 0 150px #f09;
+    }
+
+    60% {
+        text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px #bc13fe,
+            0 0 82px #bc13fe,
+            0 0 92px #bc13fe,
+            0 0 102px #bc13fe;
+    }
+
+    80% {
+        text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px #5271ff,
+            0 0 82px #5271ff,
+            0 0 92px #5271ff,
+            0 0 102px #5271ff,
+            0 0 151px #5271ff;
+    }
+
+    100% {
+        text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px #f09,
+            0 0 82px #f09,
+            0 0 92px #f09,
+            0 0 102px #f09,
+            0 0 151px #f09;
+    }
+}
+
+.tofixed {
+    position: fixed;
+    top: 0;
+    color: #555;
+    background-color: #ddd;
+    animation: showfixed 1s ease-in-out 1 forwards
+}
+
+@keyframes showfixed {
+    from {
+        top: -100px;
+    }
+}
+
+.banner {
+    height: 110vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    filter: brightness(0.5);
+    height: 100%;
+    background-image: url(header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    background-attachment: fixed;
+    z-index: -1;
+    content: '';
+}
+
+.banner .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 20vh;
+    opacity: 0;
+    font-family: 'Great Vibes', cursive;
+    animation: showtitle 3s ease-in-out 5s 1 forwards
+}
+
+
+@keyframes totopimg {
+    from {
+        opacity: 0;
+        transform: translate(-50%, 20%);
+    }
+
+    to {
+        transform: translate(-50%, 10%);
+        opacity: 1;
+    }
+}
+
+@keyframes showtitle {
+    from {
+        filter: blur(33px);
+        transform: translate(-50%, -80%);
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0px);
+        transform: translate(-50%, -50%);
+    }
+}
+
+.banner::after {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    top: 100vh;
+    background-image: url(https://livedemo00.template-help.com/wt_prod-20838/images/cloud-2.png);
+    background-size: 100%;
+    content: '';
+    filter: brightness(0.87);
+
+}
+
+.container {
+    min-height: 1500px;
+    background-color: #ddd;
+}
+
+.intro {
+    padding: 20px;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro h2 {
+    font-size: 150px;
+    padding: 0;
+    margin: 30px 0;
+    font-family: 'Great Vibes', cursive;
+}
+
+.intro div {
+    font-size: 20px;
+}
+
+.travel {
+    height: 100vh;
+    width: 80%;
+    padding: 150px 10%;
+    background-color: #cfdadb;
+    text-align: center;
+}
+
+.travel .video {
+    width: 100%;
+}
+
+.travel .video video {
+    width: 100%;
+}
+
+.darkshow {
+    width: 80%;
+    padding: 150px 10%;
+    background: #1f2538;
+    text-align: center;
+    color: #eee;
+}
+
+.darkshow .content {
+    height: 100%;
+    display: flex;
+}
+
+.darkshow .title {
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 80px;
+    width: 100%;
+}
+
+.darkshow .img {
+    width: 50%;
+}
+
+.darkshow.active .img {
+    animation: showimgdarkshow 1s ease-in-out 1s 1 forwards;
+}
+
+@keyframes showimgdarkshow {
+    from {
+        opacity: 0;
+        filter: blur(33px);
+        transform: translate(150px);
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: translate(0);
+    }
+}
+
+.darkshow .img img {
+    width: 64%;
+    height: calc(100% - 12px);
+    object-fit: cover;
+}
+
+.darkshow .list {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 12px;
+}
+
+.contactItem {
+    background-color: #161924;
+    padding: 40px 5%;
+    margin-bottom: 12px;
+    text-align: left;
+    display: block;
+    text-decoration: none;
+    position: relative;
+}
+
+.contactItem .icon {
+    width: max-content;
+    background-color: blueviolet;
+    padding: 2px 10px;
+    font-size: small;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.contactItem .titleContact {
+    font-weight: 600;
+    font-size: 34px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.slug {
+    position: absolute;
+    width: 90%;
+    overflow: hidden;
+    bottom: 40px;
+    color: #555;
+}
+
+.footer {
+    background-color: #161924;
+    width: 100%;
+    text-align: center;
+    padding-top: 200px;
+    display: block;
+    color: #eee;
+    overflow: hidden;
+}
+
+.footer .title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 130px;
+}
+
+.footer ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30vh;
+    border-top: 1px solid rgba(115, 114, 114, 0.2);
+}
+
+.footer li {
+    padding: 30px 90px;
+    font-size: 30px;
+}
+
+.footer li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.showtotop,
+.zoomshow {
+    opacity: 0;
+}
+
+.active .showtotop {
+    animation: showtop 1s ease-in-out 1 forwards;
+}
+
+.active .zoomshow {
+    animation: zoomshow 1s ease-in-out 1 forwards;
+}
+
+@keyframes zoomshow {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes showtop {
+    from {
+        opacity: 0;
+        transform: translate(0, 100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+.delay-02 {
+    animation-delay: 0.2s !important;
+}
+
+.delay-04 {
+    animation-delay: 0.4s !important;
+}
+
+.delay-06 {
+    animation-delay: 0.6s !important;
+}
+
+.delay-08 {
+    animation-delay: 0.8s !important;
+}
+
+.delay-1 {
+    animation-delay: 1s !important;
+}
+
+.delay-12 {
+    animation-delay: 1.2s !important;
+}
+
+.delay-14 {
+    animation-delay: 1.4s !important;
+}
+
+.delay-16 {
+    animation-delay: 1.6s !important;
+}
+
+.delay-18 {
+    animation-delay: 1.8s !important;
+}
+
+.delay-2 {
+    animation-delay: 2s !important;
+}
+
+.delay-12 {
+    animation-delay: 1.2s !important;
+}
+
+.delay-14 {
+    animation-delay: 1.4s !important;
+}
+
+.delay-16 {
+    animation-delay: 1.6s !important;
+}
+
+.delay-18 {
+    animation-delay: 1.8s !important;
+}
