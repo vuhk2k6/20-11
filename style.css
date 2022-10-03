@@ -187,13 +187,13 @@ body {
     text-align: center;
 }
 
+.travel .video-box,
 .travel .video {
     width: 100%;
+    height: 100%;
 }
 
-.travel .video video {
-    width: 100%;
-}
+
 
 .darkshow {
     width: 80%;
