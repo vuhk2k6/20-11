@@ -1,9 +1,118 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
 
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+
 body {
     font-family: monospace;
     margin: 0;
+    box-sizing: border-box;
+}
+
+.contact {
+    display: flex;
+    margin-top: 70px;
+}
+
+.map {
+    border-radius: 10px;
+    border: 2px solid #0ba376;
+    overflow: hidden;
+    width: 50%;
+    height: 300px;
+}
+
+.help {
+    width: 50%;
+}
+
+.help-title {
+    font-size: 26px;
+    letter-spacing: 2px;
+    width: 80%;
+    margin-bottom: 32px;
+}
+
+.form-group {
+    width: calc(80% - 24px);
+    position: relative;
+}
+
+.form-input {
+    width: 100%;
+    border: 2px solid #999;
+    outline: none;
+    background-color: #1f2538;
+    font-size: 17px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin-bottom: 32px;
+    color: #999;
+    transition: all .3s;
+}
+
+.form-group:nth-child(2) .form-input {
+    height: 72px;
+}
+
+.form-group:nth-child(2) .form-input::-webkit-scrollbar {
+    display: none;
+}
+
+.form-input:not(:placeholder-shown)+.form-label {
+    top: -19px;
+    left: 4px;
+    font-size: 14px;
+    color: #0ba376;
+}
+
+.form-input:focus {
+    border-color: #0ba376;
+}
+
+.form-input:focus+.form-label {
+    top: -19px;
+    left: 4px;
+    font-size: 14px;
+    color: #0ba376;
+}
+
+.form-label {
+    position: absolute;
+    top: 8px;
+    left: 14px;
+    font-size: 17px;
+    user-select: none;
+    cursor: text;
+    transition: all .4s;
+}
+
+.form-button {
+    border: 2px solid #0ba376;
+    background-color: #1f2538;
+    border-radius: 100px;
+    color: #fff;
+    transition: all .3s;
+    font-size: 18px;
+    padding: 8px 24px;
+    margin-right: 20%;
+    float: right;
+}
+
+.form-button:hover {
+    background-color: #0ba376;
+}
+
+.form-button:hover {
+    background-color: #0ba376;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
 }
 
 .nav {
@@ -229,6 +338,7 @@ body {
 
 .darkshow .img {
     width: 50%;
+    text-align: left;
 }
 
 .darkshow.active .img {
@@ -250,7 +360,7 @@ body {
 }
 
 .darkshow .img img {
-    width: 64%;
+    width: 80%;
     height: calc(100% - 12px);
     object-fit: cover;
 }
@@ -336,6 +446,10 @@ body {
 .showtotop,
 .zoomshow {
     opacity: 0;
+}
+
+.darkshow.active .showvideo {
+    animation: showvideo 2s ease-in-out 1s 1 forwards;
 }
 
 .active .showtotop {
@@ -428,18 +542,18 @@ body {
     animation-delay: 2s !important;
 }
 
-.delay-12 {
-    animation-delay: 1.2s !important;
+.delay-22 {
+    animation-delay: 2.2s !important;
 }
 
-.delay-14 {
-    animation-delay: 1.4s !important;
+.delay-24 {
+    animation-delay: 2.4s !important;
 }
 
-.delay-16 {
-    animation-delay: 1.6s !important;
+.delay-26 {
+    animation-delay: 2.6s !important;
 }
 
-.delay-18 {
-    animation-delay: 1.8s !important;
+.delay-28 {
+    animation-delay: 2.8s !important;
 }
